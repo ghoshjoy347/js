@@ -4,7 +4,7 @@ var accountPassword =  "12345"
 accountCity = "Kolkata"
 let accountState
 
-// accountId = 2
+//  accountId = 2
 
 console.log(accountId);
 
