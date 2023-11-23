@@ -10,7 +10,7 @@ console.log(accountId);
 
 accountEmail = "joyghosh@gmail.com"
 accountPassword = "987456"
-accountCity = "Mumbai"
+accountCity = "Mumbai" 
 
 /*
 prefer not to use var, bcs of issue of block scope and functional scope
