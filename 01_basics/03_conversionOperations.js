@@ -28,3 +28,13 @@ console.log(stringNumber);
 console.log(typeof stringNumber);
 
 // it changes the number value into string format as the datatype is converted to string
+
+//-------------------OPERATIONS---------------------
+
+let value = 3
+let negetiveValue = -value
+console.log(negetiveValue);
+
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter)
