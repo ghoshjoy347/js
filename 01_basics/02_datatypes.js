@@ -9,4 +9,4 @@ let state = null //empty
 
 console.log(typeof "joy");//it shows the datatype which we have written within "...."
 console.log(typeof undefined);//the datatype of undefined is undefined
-console.log(typeof null);//the datatype of null is object
+console.log(typeof null);//the datatype of null is object 
