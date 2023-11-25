@@ -33,7 +33,7 @@ const myFunction = function(){
     console.log("Hello World")
 }
 
-//---------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------
 
 //Stack (Primitive)[copy of the variable not the real or reference value], Heap(Non-Primitive)[reference value or original value]
 
