@@ -9,7 +9,7 @@ const scoreValue = 100.3
 const isLoggedIn = false
 const Temp = null
 let userEmail
-
+ 
 const id = Symbol("789")
 const anotherId = Symbol("789")
 console.log(id === anotherId)
