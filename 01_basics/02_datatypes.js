@@ -3,7 +3,7 @@
 let name = "Joy" //string
 let age = 22 //number
 let isLoggedIn = true //boolean
-let state = null //empty 
+let state = null //empty  
 //undefined means till now data haven't been uploaded
 //symbols -> uniqueness
 
