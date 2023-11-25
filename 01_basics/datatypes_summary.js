@@ -24,11 +24,34 @@ const bigNumber = 123456789987456123n
 const heros = ["ironman", "hulk", "loki"] // Arrays
 
 // Objects (inside curly brackets)
-{
-    name: "joy",
-    age: 22,
-}
+let person = {
+    name: "joy", 
+    age: 22
+} 
 
 const myFunction = function(){
     console.log("Hello World")
 }
+
+//---------------------------------------------------
+
+//Stack (Primitive)[copy of the variable not the real or reference value], Heap(Non-Primitive)[reference value or original value]
+
+let myName = "joyghosh"
+let anotherName = myName
+anotherName = "ghoshop"
+
+console.log(anotherName)
+console.log(myName)
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@okicici"
+}
+
+let userTwo = userOne
+
+userTwo.email = "joy@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
