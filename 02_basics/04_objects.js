@@ -26,4 +26,29 @@ const obj2 = {3:"a",4:"b"}
 //const obj3 = Object.assign(obj1,obj2)//alternate way to keep inside an object, this combines and put in a single key value pairs
 
 const obj3 = {...obj1,...obj2} //... this is called as spread operator(maximum usage as compared to assign)
-console.log(obj3);
+//console.log(obj3)
+
+//syntax used to fetch values from databases and it comes generally in array of oobjects
+
+const users = [
+    {
+        id: 1,
+        email:"ghosh@gmail.com"
+    },
+    {
+        id: 1,
+        email:"ghosh@gmail.com"
+    },
+    {
+        id: 1,
+        email:"ghosh@gmail.com"
+    },
+]
+
+users[1].email
+console.log(fbUser);
+
+console.log(Object.keys(fbUser))
+console.log(Object.values(fbUser))
+console.log(Object.entries(fbUser))//entries are less used
+console.log(fbUser.hasOwnProperty('isLogged'))//does it contain inside it or not
