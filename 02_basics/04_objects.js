@@ -52,3 +52,19 @@ console.log(Object.keys(fbUser))
 console.log(Object.values(fbUser))
 console.log(Object.entries(fbUser))//entries are less used
 console.log(fbUser.hasOwnProperty('isLogged'))//does it contain inside it or not
+
+const course ={
+    coursename: "Js series",
+    price: "1999",
+    courseInstructor: "Joy"
+}
+
+const{courseInstructor: inst} = course //shorten the name(here, courseInstructor) to another name (here, inst) ,we can write instead of the main name
+
+console.log(inst)
+
+{                       //objects with no name kinda means like JSON
+    name: "joyy",
+    coursename: "Js",
+    price: "free"
+}
