@@ -41,4 +41,30 @@ function loginUserMessage(username) {
     return (username + " just logged in")
     return `${username} just logged in `
 }
-console.log(loginUserMessage('ghosh'))
+//console.log(loginUserMessage('ghosh'))
+
+function calculateCartPrice(...num1) { //spread operator
+    return num1
+}
+
+console.log(calculateCartPrice(20,40,50))
+
+const user = {
+    username: "joy",
+    price: "1999"
+}
+
+function handleObject(anyobject){
+    console.log("username is " + (anyobject.username) ,"and the price is " + (anyobject.price) );
+}
+
+handleObject(user)
+
+const myNewArray = [1,2,3,4,5]
+
+function returnThirdValue(getArray) {
+    return getArray[2]
+}
+
+//console.log(returnThirdValue([1,2,3,4,5]))
+console.log(returnThirdValue(myNewArray))
