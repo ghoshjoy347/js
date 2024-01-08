@@ -15,8 +15,27 @@ const prg = ["js","java","cpp","python"]
 // }
 // prg.forEach(printMe)
 
-prg.forEach((key, index, array) => {
-    console.log(key, index, array)
-});
+// prg.forEach((key, index, array) => {
+//     console.log(key, index, array)
+// });
 
-// 8:19:16
+// 
+
+const myCode = [ // inside an array ,there's 3 objects
+    {
+        langName: "Javascript",
+        langFilename: "JS"
+    },
+    {
+        langName: "Java",
+        langFilename: "Java"
+    },
+    {
+        langName: "Python",
+        langFilename: "Py"
+    },
+]
+
+myCode.forEach((item)=>{ // we took the value from, array -> object -> value
+    console.log(item.langFilename);
+})
