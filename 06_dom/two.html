@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM wit Joy</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.818); color: white;">
+    <div class="parent">
+        <div class="day">Mon</div>
+        <div class="day">Tues</div>
+        <div class="day">Wed</div>
+        <div class="day">Thurs</div>
+    </div>
+</body>
+<script>
+    //<!-- select parent element and show the values inside it ,we represent classs by .variableName,i.e,here .parents -->
+    const parent = document.querySelector('.parent')
+    //console.log(parent);
+    //console.log(parent.children[1].innerHTML); // Here,in case of (parent.children) we got HTMLcollection, which has an array like property
+for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML)
+    }
+    //parent.children[1].style.color = "pink"
+    //console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector(".day")
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    
+    //1:13:10
+
+</script>
+</html>
