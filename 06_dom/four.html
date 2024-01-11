@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Joy</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+
+    //In this function, the whole tree is traversed using innerHTML.Basically, appendChild() is preferred over innerHTML()
+
+    function addLanguage(langName) {
+        const li = document.createElement('li')// creating an element
+        li.innerHTML = `${langName}` //adding value inside the element
+        document.querySelector('.language').appendChild(li)
+}
+addLanguage("Python")
+addLanguage("Typescript")
+
+
+// Below one is more optimised version than previous one, appendChild() always is preferred over innerHTML()
+
+function addOptiLanguage(langName) {
+    const li = document.createElement('li')
+    const addText = document.createTextNode(langName)
+    li.appendChild(addText)
+    document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage("GoLang")
+
+//EDIT
+
+const thirdLang = document.querySelector("li:nth-child(3)")
+//thirdLang.innerHTML = "Ruby"
+const newli = document.createElement('li')
+newli.textContent = "ruby"
+thirdLang.replaceWith(newli)
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+</script>
+
+</html>
