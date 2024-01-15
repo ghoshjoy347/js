@@ -28,3 +28,5 @@ JS engine is made from - Memory Heap
 task Queue - it makes Js fast and async and it adds Call Back to Call Stack
 
  Whenever, the program is executed, it generates a call stack; inside the call stack, global execution context is generated and then one by one function gets loaded, when even one of the function gets executed it gets unloaded.
+
+ fetch() - its an API,which works on task queue,it generally expands or kinda another task view which is of high priority
