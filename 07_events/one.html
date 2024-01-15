@@ -32,14 +32,14 @@
     // target, toELement, srcELement, currentTarget
     // clientX, clientY, screenx, screenY
 
-    document.getElementById('images').addEventListener('click', function(event){
-        console.log("clicked inside the url");
-    },false)  //false is given as a default
+    // document.getElementById('images').addEventListener('click', function(event){
+    //     console.log("clicked inside the url");
+    // },false)  //false is given as a default
    
-    document.getElementById('owl').addEventListener('click', function(event){
-        console.log("owl clicked");
-        event.stopPropagation()
-    },false)  
+    // document.getElementById('owl').addEventListener('click', function(event){
+    //     console.log("owl clicked");
+    //     event.stopPropagation()
+    // },false)  
 
 
     //event propagation(also known as bubbling mode)-> in 2 events which of it would go first - this works from inside to outside ,in case here "owl clicked" would go first as compared to "clicked inside the url" 
@@ -47,5 +47,23 @@
     //capturing mode -> {for this to happen we need to change false to true }this works from outside to inside ,in case here "clicked inside the url" would go fast as compared to "owl clicked"
 
     //event.stopPropagation() - this stops going to the outer element,only it would stick to inner element, i.e, if we have , "owl clicked" & "clicked inside the url". In default we get "owl clicked" first and the other as second,but using stopPropagation(), we will only get "owl clicked" 
+    
+
+// document.getElementById('google').addEventListener('click',function(event){
+//     event.preventDefault()
+//     event.stopPropagation()
+//     console.log('google clicked');
+// },false)
+
+document.querySelector('#images').addEventListener('click',function(event){
+    
+    console.log(event.target.tagName)
+    if(event.target.tagName == 'IMG'){
+        console.log(event.target.id)
+    let removeIt = event.target.parentNode
+    //removeIt.remove()
+    removeIt.remove()
+    }
+})
     </script>
 </html>
