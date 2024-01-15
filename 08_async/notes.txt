@@ -1,0 +1,30 @@
+Javascript
+
+-it works in synchronous way, i.e, one code at a time and then another.So, JS is synchronous.
+
+-it is a single threaded language,it gets executed in one thread
+
+--------------------------------------------
+
+Execution Context
+-executes one line of code at a time
+(each operations waits for the last one to complete before executing)
+
+----------------------------------------------
+
+2 types pf codes are written in JS
+
+-Blocking : Blocks the flow of the program(we cannot do any work we have to wait)
+            Read File sync(waits for the execution to complete, then shows result or proceed further)
+
+-Non Blocking : Doesn't blocks the execution of the program(we can do any work we don't have to wait)
+                Read File Async(doesn't waits for the execution to complete, it shows the result  earlier or proceed further)
+
+-----------------------------------------------
+
+JS engine is made from - Memory Heap
+                         Call Stack
+
+task Queue - it makes Js fast and async
+
+ Whenever, the program is executed, it generates a call stack; inside the call stack, global execution context is generated and then one by one function gets loaded, when even one of the function gets executed it gets unloaded.
