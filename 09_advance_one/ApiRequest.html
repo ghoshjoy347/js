@@ -19,8 +19,9 @@
     xhr.open('GET', requestUrl)
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState)
-        if(xhr.readyState === 4){
-            console.log(this.responseText) // without 'this' keyword it won't execute
+        if(xhr.readyState === 4){  // whenever we get a response from url, we get the response as String type 
+            const data = JSON.parse(this.responseText) //.parse - converts String to JSON (as objects)
+            console.log(data.followers) // without 'this' keyword it won't execute
         }
     }
     console.log(xhr.readyState)
