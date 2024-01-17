@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- UNSENT           -> Client has been created. open() not called yet.
+	     OPENED           -> open() has been called.
+	     HEADERS_RECEIVED -> send() has been called, and headers and status are available.
+     	 LOADING	      -> Downloading; responseText holds partial data.
+	     DONE             -> The operation is complete. -->
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/ghoshjoy347'
+    const xhr = new XMLHttpRequest() //fresh object so new()keyword
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+            console.log(this.responseText) // without 'this' keyword it won't execute
+        }
+    }
+    console.log(xhr.readyState)
+    xhr.send()
+</script>
+
+</html>
