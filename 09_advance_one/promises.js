@@ -95,3 +95,30 @@ async function consumePromiseFive(){  //async await has an issue that, it cannot
 }
 
 consumePromiseFive()
+
+
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users') // fetch is a newtwork request, it needs time we have to use await
+//         const data = await response.json() // the data needs to be converted from string to json // response.json - it also takes time to complete so we have to write 'await' for it to execute
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error occured : ",error)
+//     }
+// }
+
+// getAllUsers()
+
+
+
+//If we want to do the above function, in '.then' , '.catch' 
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {          //here, response is the variable name
+    return response.json()
+}) 
+.then((data) => {
+    console.log(data)
+})
+.catch((error) => console.log(error))
