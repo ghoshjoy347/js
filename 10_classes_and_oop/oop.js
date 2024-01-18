@@ -22,7 +22,6 @@ function User(username, loginInCount, isLoggedIn ){
     this.greeying = function(){
         console.log(`Welcome ${this.username}`);
     }
-
     return this
 }
 
@@ -30,3 +29,5 @@ const userOne = new User("joyyy",12,true)
 const userTwo = new User("codewithjoy",11,false)
 console.log(userOne.constructor)// reference of the suer
 //console.log(userTwo)
+
+// till 7:10:00
