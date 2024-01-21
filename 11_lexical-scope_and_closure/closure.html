@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function init() {
+    // let name = "Mozilla"    
+    // function displayName() {  
+    //     console.log(name)       //name function is outside the scope
+    // }
+    // displayName()
+    // }
+    // init()
+
+
+        function outer(){        //nor parents can take from their childs, neither siblings can take from each other, and but child can get access of the parents  
+            let username = "joy"
+            function inner(){
+                let secret = "my123"
+                console.log("inner",username)
+            }
+            
+            function innerTwo(){
+                console.log("innerTwo",username)
+            }
+            inner()
+            innerTwo()
+        }
+        outer()
+        console.log(username)
+
+
+        // 9:56:00
+
+</script>
+</html>
