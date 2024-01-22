@@ -19,24 +19,35 @@
     // init()
 
 
-        function outer(){        //nor parents can take from their childs, neither siblings can take from each other, and but child can get access of the parents  
-            let username = "joy"
-            function inner(){
-                let secret = "my123"
-                console.log("inner",username)
-            }
+        // function outer(){        //nor parents can take from their childs, neither siblings can take from each other, and but child can get access of the parents  
+        //     let username = "joy"
+        //     function inner(){
+        //         let secret = "my123"
+        //         console.log("inner",username)
+        //     }
             
-            function innerTwo(){
-                console.log("innerTwo",username)
-            }
-            inner()
-            innerTwo()
-        }
-        outer()
-        console.log(username)
+        //     function innerTwo(){
+        //         console.log("innerTwo",username)
+        //     }
+        //     inner()
+        //     innerTwo()
+        // }
+        // outer()
+        // console.log(username)
 
 
-        // 9:56:00
+    function makeFunc() {
+    const name = "Mozilla"    
+    function displayName() {  
+        console.log(name)       //name function is outside the scope
+    }
+    return displayName      //it would return both inner as well as outer function,here it would take the whole lexical scope
+    }
+
+    const myFunc = makeFunc()
+    myFunc()
+
+        
 
 </script>
 </html>
