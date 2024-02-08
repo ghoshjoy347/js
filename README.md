@@ -1,2 +1,2 @@
 # js
-Learning Javascript from Scratch
+Learning Javascript from Scratch (Done)
